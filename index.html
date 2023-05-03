@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <canvas id="game-canvas" width="600" height="400"></canvas>
+      <div class="game-controls">
+        <button id="start-btn">Start</button>
+        <button id="pause-btn">Pause</button>
+        <div id="score">Score: 0</div>
+        <button id="resume-btn">Resume</button>
+      </div>
+      <div class="name-form-container">
+        <form id="name-form">
+          <label for="name">請 先 輸入名字，不然不會有紀錄喔:</label>
+          <input type="text" id="name" name="name" required>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="leaderboard-container">
+        <h2>Leaderboard</h2>
+        <table id="leaderboard">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
